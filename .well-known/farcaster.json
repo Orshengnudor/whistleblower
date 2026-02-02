@@ -1,9 +1,14 @@
 {
+  "accountAssociation": {
+    "header": "eyJmaWQiOjEwODc0NjksInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHhCMTQ2OEZhMzg3ZDk5MzU2MzBhMjU0M2FDZUU5NTU3ZTNGMUI5MTQwIn0",
+    "payload": "eyJkb21haW4iOiJ3aGlzdGxlYmxvd2VyYmFzZTEudmVyY2VsLmFwcCJ9",
+    "signature": "Ts+qr7b5TbDYB8WToX+gTyn6PeN8CnF8LuWXYvC3yzhtxVao5v6IB2Onyectd3zvrieq9nYNtU2YbN1sMzH/zRw="
+  },
   "frame": {
     "version": "1",
     "name": "Whistleblower",
     "iconUrl": "https://placehold.co/256x256.png",
-    "homeUrl": "https://whistleblowerbase.vercel.app",
+    "homeUrl": "https://whistleblowerbase1.vercel.app",
     "imageUrl": "https://placehold.co/1200x630.png",
     "buttonTitle": "Start",
     "splashBackgroundColor": "#0f172a"

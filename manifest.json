@@ -1,14 +1,9 @@
 {
-  "accountAssociation": {
-    "header": "",
-    "payload": "",
-    "signature": ""
-  },
   "frame": {
     "version": "1",
     "name": "Whistleblower",
     "iconUrl": "https://placehold.co/256x256.png",
-    "homeUrl": "https://whistleblowerbase.vercel.app/",
+    "homeUrl": "https://whistleblowerbase.vercel.app",
     "imageUrl": "https://placehold.co/1200x630.png",
     "buttonTitle": "Start",
     "splashBackgroundColor": "#0f172a"
