@@ -1,0 +1,16 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "Whistleblower",
+    "iconUrl": "https://placehold.co/256x256.png",
+    "homeUrl": "https://YOUR_DOMAIN.vercel.app",
+    "imageUrl": "https://placehold.co/1200x630.png",
+    "buttonTitle": "Open",
+    "splashBackgroundColor": "#0f172a"
+  }
+}

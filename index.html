@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Whistleblower</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+    select, textarea, input, button {
+      width: 100%;
+      margin-top: 12px;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Whistleblower</h1>
+
+<form onsubmit="submitReport(event)">
+  <select required>
+    <option value="">Select report type</option>
+    <option>Scam</option>
+    <option>Rug Pull</option>
+    <option>Impersonation</option>
+    <option>Other</option>
+  </select>
+
+  <textarea placeholder="Describe what happened..." required></textarea>
+
+  <input placeholder="Optional link or evidence" />
+
+  <button type="submit">Submit Report</button>
+</form>
+
+<script>
+  function submitReport(e) {
+    e.preventDefault();
+    alert("Report submitted anonymously");
+  }
+</script>
+
+</body>
+</html>
