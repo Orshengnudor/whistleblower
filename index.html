@@ -4,14 +4,45 @@
   <meta charset="UTF-8" />
   <title>Whistleblower</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Farcaster Frame SDK -->
+  <script src="https://unpkg.com/@farcaster/frame-sdk/dist/frame-sdk.umd.js"></script>
+
   <style>
-    body { font-family: Arial; background: #0f172a; color: white; padding: 20px; }
-    h1 { text-align: center; }
-    form { max-width: 400px; margin: auto; }
-    select, textarea, input, button {
-      width: 100%; margin-top: 12px; padding: 10px; border-radius: 6px; border: none;
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      padding: 20px;
     }
-    button { background: #2563eb; color: white; cursor: pointer; }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+    select, textarea, input, button {
+      width: 100%;
+      margin-top: 12px;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 14px;
+    }
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
   </style>
 </head>
 <body>
@@ -28,15 +59,25 @@
   </select>
 
   <textarea placeholder="Describe what happened..." required></textarea>
+
   <input placeholder="Optional link or evidence" />
+
   <button type="submit">Submit Report</button>
 </form>
 
 <script>
-function submitReport(e) {
-  e.preventDefault();
-  alert("Report submitted anonymously");
-}
+  // ✅ Tell Farcaster the app is ready
+  window.addEventListener("load", () => {
+    if (window.farcaster?.sdk?.actions) {
+      window.farcaster.sdk.actions.ready();
+      console.log("Farcaster SDK ready");
+    }
+  });
+
+  function submitReport(e) {
+    e.preventDefault();
+    alert("Report submitted anonymously");
+  }
 </script>
 
 </body>
